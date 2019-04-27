@@ -50,7 +50,6 @@ export default class Tabs extends Component {
     }
 }
 
-
 const allTabs = [...document.querySelectorAll('tabs')];
 allTabs.forEach((el) => {
     new Tabs({ element: el});

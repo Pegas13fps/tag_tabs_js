@@ -12,13 +12,13 @@ let tabsComponent = new Tabs({
 })
 
 tabsComponent.subscribe('tab-selected', ({ title, content }) => {
-    console.log(`1 Tab ${ title } was selected \n ${content}`);
+    // console.log(`1 Tab ${ title } was selected \n ${content}`);
 });
 
 let tabsElements = [...document.querySelectorAll('tabs')];
 tabsElements.forEach((el) => {
     el.addEventListener('tab-selected', (event) => {
         let { title } = event.detail;
-        console.log(title);
+        // console.log(title);
     })
 })

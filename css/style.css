@@ -1,3 +1,62 @@
 body {
     height: 5000px;
 }
+/* .tabs > div, .tabs_controls > button { display: none; }
+
+.tabs button { padding: 5px; border: 1px solid #aaa; line-height: 28px; cursor: pointer; position: relative; bottom: 1px; background: #fff; }
+.tabs button[type="radio"]:checked + button { border-bottom: 2px solid #fff; }
+
+.tabs > button:nth-of-type(1):checked ~ div:nth-of-type(1),
+.tabs > button:nth-of-type(2):checked ~ div:nth-of-type(2),
+.tabs > button:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; padding: 5px; border: 1px solid #aaa; } */
+
+/* .tabs_controls > button { display: none; }
+
+.tabs button {
+  padding: 5px; 
+  border: 1px solid #aaa; 
+  line-height: 28px; 
+  cursor: pointer; 
+  position: relative; 
+  bottom: 1px; background: #fff;
+}
+.tabs__controls button[type="radio"]:checked + button { border-bottom: 2px solid #fff; }
+
+.tabs__controls > button:nth-of-type(1):checked ~ div:nth-of-type(1),
+.tabs__controls > button:nth-of-type(2):checked ~ div:nth-of-type(2),
+.tabs__controls > button:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; padding: 5px; border: 1px solid #aaa; } */
+
+.tabs__controls {
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  /* background-color: #f1f1f1; */
+}
+
+/* Style the buttons that are used to open the tab content */
+.tabs__controls button {
+  background-color: inherit;
+  float: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tabs__controls button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabs__controls button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
